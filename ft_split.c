@@ -6,7 +6,7 @@
 /*   By: astalha < astalha@student.1337.ma>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 13:32:19 by astalha           #+#    #+#             */
-/*   Updated: 2022/10/24 01:33:22 by astalha          ###   ########.fr       */
+/*   Updated: 2022/10/24 19:16:38 by astalha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static void	freealloc(char **ptr, int index)
 	int	i;
 
 	i = 0;
-	while (i <= index)
+	while (i < index)
 	{
 		free (ptr[i]);
 		i++;
@@ -79,7 +79,7 @@ char	**ft_split(char const *s, char c)
 
 	index = 0;
 	word_count = counttk (s, c);
-	if (!s || !(char **) malloc (sizeof(char *) * (word_count + 1)))
+	if (!s)
 		return (NULL);
 	ptr = (char **) malloc (sizeof(char *) * (word_count + 1));
 	while (*s && index < word_count)
