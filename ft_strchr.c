@@ -6,7 +6,7 @@
 /*   By: astalha < astalha@student.1337.ma>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 23:01:26 by astalha           #+#    #+#             */
-/*   Updated: 2022/10/21 01:24:52 by astalha          ###   ########.fr       */
+/*   Updated: 2022/10/26 20:57:33 by astalha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,16 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	unsigned char	ch;
+	int				i;
 
 	i = 0;
-	if (!c)
+	ch = (unsigned char) c;
+	if (!ch)
 		return ((char *)s + ft_strlen (s));
 	while (s[i])
 	{
-		if (s[i] == (unsigned char)c)
+		if (s[i] == ch)
 			return ((char *)s + i);
 		i++;
 	}
