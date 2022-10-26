@@ -6,7 +6,7 @@
 /*   By: astalha < astalha@student.1337.ma>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 02:51:36 by astalha           #+#    #+#             */
-/*   Updated: 2022/10/23 21:33:47 by astalha          ###   ########.fr       */
+/*   Updated: 2022/10/26 20:32:07 by astalha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@ static int	lenn(long n)
 		n = -n;
 		i++;
 	}
-	while (n >= 10)
+	while (n)
 	{
 		n = n / 10;
 		i++;
 	}
-	return (i + 1);
+	return (i);
 }
 
 char	*ft_itoa(int n)
