@@ -6,7 +6,7 @@
 /*   By: astalha < astalha@student.1337.ma>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 13:32:19 by astalha           #+#    #+#             */
-/*   Updated: 2022/10/26 04:44:14 by astalha          ###   ########.fr       */
+/*   Updated: 2022/10/26 20:49:43 by astalha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ static int	counttk(const char *s, char c)
 
 	i = 0;
 	count = 0;
-	if (!s)
-		return (0);
 	while (s[i])
 	{
 		if (s[i] != c)
@@ -78,9 +76,9 @@ char	**ft_split(char const *s, char c)
 	int		word_count;
 
 	index = 0;
-	word_count = counttk (s, c);
 	if (!s)
 		return (NULL);
+	word_count = counttk (s, c);
 	ptr = (char **) malloc (sizeof(char *) * (word_count + 1));
 	if (!ptr)
 		return (NULL);
