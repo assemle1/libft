@@ -6,7 +6,7 @@
 /*   By: astalha < astalha@student.1337.ma>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 13:32:19 by astalha           #+#    #+#             */
-/*   Updated: 2022/10/24 19:16:38 by astalha          ###   ########.fr       */
+/*   Updated: 2022/10/26 04:44:14 by astalha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,8 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	ptr = (char **) malloc (sizeof(char *) * (word_count + 1));
+	if (!ptr)
+		return (NULL);
 	while (*s && index < word_count)
 	{
 		if (*s != c)
@@ -96,14 +98,3 @@ char	**ft_split(char const *s, char c)
 	ptr[index] = 0;
 	return (ptr);
 }
-// int main()
-// {
-// 	char **ptr;
-// 	char *str;
-// 	int i;
-// 	i = 0;
-// 	str = ft_strdup("  tripouille  42  ");
-// 	ptr = ft_split(str,' ');
-// 	// while(ptr[i])
-// 	printf("%s\n",ptr[3]);
-// }
