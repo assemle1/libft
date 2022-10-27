@@ -6,7 +6,7 @@
 /*   By: astalha < astalha@student.1337.ma>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 15:51:26 by astalha           #+#    #+#             */
-/*   Updated: 2022/10/27 03:50:16 by astalha          ###   ########.fr       */
+/*   Updated: 2022/10/27 03:52:41 by astalha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memmove(void *dest, const void *src, size_t size)
 	else if (dest > src)
 	{
 		while (size-- > 0)
-			*(unsigned char *)(dest + size) = *(unsigned char *)(src + size);
+			*(char *)(dest + size) = *(char *)(src + size);
 	}
 	else
 		ft_memcpy (dest, src, size);

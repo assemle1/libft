@@ -6,12 +6,11 @@
 /*   By: astalha < astalha@student.1337.ma>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 13:32:19 by astalha           #+#    #+#             */
-/*   Updated: 2022/10/26 20:49:43 by astalha          ###   ########.fr       */
+/*   Updated: 2022/10/27 04:27:11 by astalha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// #include <stdio.h>
 
 static int	counttk(const char *s, char c)
 {
