@@ -6,7 +6,7 @@
 /*   By: astalha < astalha@student.1337.ma>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 17:07:48 by astalha           #+#    #+#             */
-/*   Updated: 2022/10/19 02:22:09 by astalha          ###   ########.fr       */
+/*   Updated: 2022/10/27 03:50:52 by astalha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t size)
 		return (NULL);
 	while (i < size)
 	{
-		*(unsigned char *)(dest + i) = *(unsigned char *)(src + i);
+		*(char *)(dest + i) = *(char *)(src + i);
 		i++;
 	}
 	return (dest);

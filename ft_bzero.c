@@ -6,7 +6,7 @@
 /*   By: astalha < astalha@student.1337.ma>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 18:19:57 by astalha           #+#    #+#             */
-/*   Updated: 2022/10/23 23:17:48 by astalha          ###   ########.fr       */
+/*   Updated: 2022/10/27 02:50:38 by astalha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*p;
+	char	*p;
 
-	p = (unsigned char *)s;
+	p = (char *)s;
 	while (n--)
 		*p++ = 0;
 }

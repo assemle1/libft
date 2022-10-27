@@ -6,7 +6,7 @@
 #    By: astalha < astalha@student.1337.ma>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/17 23:42:01 by astalha           #+#    #+#              #
-#    Updated: 2022/10/26 20:10:26 by astalha          ###   ########.fr        #
+#    Updated: 2022/10/27 03:13:32 by astalha          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,8 @@ RM				= rm -f
 AR				= ar rc
 FLAGS			= -Wall -Wextra -Werror
 NAME			= libft.a
+
+.PHONY: all clean bonus fclean re
 
 $(NAME): $(OBJS) 
 	$(AR) $(NAME) $(OBJS)
