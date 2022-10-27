@@ -6,7 +6,7 @@
 #    By: astalha < astalha@student.1337.ma>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/17 23:42:01 by astalha           #+#    #+#              #
-#    Updated: 2022/10/27 03:13:32 by astalha          ###   ########.fr        #
+#    Updated: 2022/10/27 23:08:30 by astalha          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ all: $(NAME)
 %.o: %.c libft.h
 	$(CC) $(FLAGS) -c $< -o $@
 	
-bonus: $(BONUS_OBJS) libft.h
+bonus: all $(BONUS_OBJS) libft.h
 	$(AR) $(NAME) $(BONUS_OBJS)
 
 clean:
